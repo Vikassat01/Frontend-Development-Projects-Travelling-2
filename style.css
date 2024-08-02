@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins:ital', 'sans-serif';
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+:root {
+    --dark-green: #112a34;
+    --green-color: #004047;
+    --white-color: #fff;
+}
+
+::selection {
+    background: var(--green-color);
+    color: var(--white-color);
+}
+
+html,
+.body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 90%;
+}
+
+section {
+    padding: 0 8rem;
+    width: 100%;
+}
+
+section.Home {
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.Home .Home-box {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("image/datingscout-hNA4vDFGVz4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.Home .Home-box nav {
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(rgb(255, 255, 255, .2), rgb(255, 255, 255, .2));
+    backdrop-filter: blur(1px);
+    border-radius: 07rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    z-index: 10;
+    position: relative;
+}
+
+.Home .Home-box nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Home .Home-box nav .logo .bar {
+    font-size: 1.35rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.Home .Home-box nav .logo .bars:hover {
+    color: var(--green-color);
+}
+
+.Home .Home-box nav .logo h3 {
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.Home .Home-box nav .logo h3:hover {
+    color: var(--dark-green);
+}
+
+.Home .Home-box nav .menu .close {
+    display: none;
+}
+
+.Home .Home-box nav .menu ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+
+}
+
+.Home .Home-box nav .menu ul li a {
+    color: var(--white-color);
+    font-weight: 400;
+
+}
+
+.Home .Home-box nav .menu ul li a:hover {
+    color: rgb(255 255 255/70%);
+
+}
+
+.Home .Home-box nav .Signup-Login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Home .Home-box nav .Signup-Login a {
+    color: var(--white-color);
+    padding: .3rm 1rem;
+    border-radius: 2rem;
+}
+
+.Home .Home-box nav .Signup-Login a:last-child {
+    background: var(--dark-green);
+    padding: .5rem;
+    border-radius: 2rem;
+}
+
+.Home .Home-box nav .Signup-Login a:hover {
+    color: rgb(255 255 255/70%);
+}
+
+.Home .Home-box nav .Signup-Login a:last-child:hover {
+    color: var(--white-color);
+    background: #02636e;
+}
+
+.Home .Home-box .Content {
+    width: 100%;
+    height: calc(110% - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0, -65px);
+
+}
+
+.Home .Home-box .Content h5 {
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: .05rem;
+}
+
+.Home .Home-box .Content h1 {
+    font-size: 4rem;
+    max-width: 50rem;
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.Home .Home-box .Content p {
+    color: #eee;
+    font-weight: 300;
+    max-width: 40rem;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Home .Home-box .Content .Search {
+    width: 100%;
+    max-width: 38rem;
+    height: 45px;
+    background: var(--white-color);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+}
+
+.Home .Home-box .Content .Search i {
+    color: rgba(0, 0, 0, .5);
+    margin: 0 .6rem;
+}
+
+.Home .Home-box .Content .Search input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 400;
+
+}
+
+.Home .Home-box .Content .Search button {
+    height: 100%;
+    padding: 0 1rem;
+    border-radius: inherit;
+    background: var(--dark-green);
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+Home .Home-box .Content .Search button {
+    background: #02636e;
+}
+
+/* Travel section starts here. */
+
+section {
+    padding: 0 8rem;
+    width: 100%;
+}
+
+
+/* Travel section End here. */
+
+.Travel .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem 0;
+}
+
+.Travel .container .box{
+    padding: 0 1rem;
+    text-align: center;
+    max-width: 85%;
+
+}
+
+.Travel .container .box img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.Travel .container .box h4{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.Travel .container .box p{
+    color: #666;
+}
+
+.box{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Media section start from here */
+@media (max-width: 1020px) {
+    html {
+        font-size: 85%;
+    }
+
+    section{
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 910px) {
+
+    .Home .Home-box nav {
+        padding: 0 1rem;
+    }
+
+    .Home .Home-box nav .menu ul {
+        gap: 2rem;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .Home .Home-box nav .menu {
+        display: none;
+    }
+
+    .Home .Home-box nav .logo .bars {
+        display: block;
+    }
+
+    .Home .Home-box nav .logo .menu.active {
+        display: block;
+        position: absolute;
+        left: -1.5rem;
+        top: -1.5rem;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0/90%);
+        display: flex;
+        align-items: center;
+        padding: 0 .3rem;
+    }
+
+    .Home .Home-box nav  .menu .close {
+        display: block;
+        position: absolute;
+        left: 3rem;
+        top: 3rem;
+        cursor: pointer;
+        color: var(--white-color);
+        font-size: 2rem;
+
+    }
+
+    .Home .Home-box nav .menu .close:hover {
+        color: rgb(255 255 255/40%);
+    }
+
+    .Home .Home-box nav .menu .ul {
+        flex-direction: column;
+        font-size: 1.3rem;
+        gap: 1rem;
+    }
+
+    .Home .Home-box nav .menu ul:hover li a{
+        color: rgb(255 255 255/40%);
+    }
+
+    .Home .Home-box nav .menu ul li a:hover{
+        color: var(--white-color);
+    }
+
+    .Home .Home-box nav .menu .ul:hover {
+        color: var(--white-color);
+    }
+
+    .Home .Home-box .Content{
+        padding: 2rem;
+    }
+
+    .Travel .container{
+        flex-direction: column;
+        padding: 4rem 0;
+        gap: 4rem;
+    }
+
+    .Travel .container .box img{
+        height: 8rem;
+
+    }
+
+
+
+
+}
+
+@media (max-width: 607px) {
+    .Home .Home-box .Content h1{
+        font-size: 2rem;
+    }
+
+    .Home .Home-box .Content p{
+        font-size: .8rem;
+    }
+
+}

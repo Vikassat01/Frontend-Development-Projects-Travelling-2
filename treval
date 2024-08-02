@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johar Jharkhand Expo</title>
+<style>
+  /* CSS styles here */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Johar Jharkhand Expo</h1>
+    <p>Discover the rich culture and heritage of Jharkhand!</p>
+  </header>
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Welcome to Johar Jharkhand Expo! We are dedicated to showcasing the vibrant culture, traditions, and heritage of Jharkhand.</p>
+    
+    <h2>Events</h2>
+    <ul>
+      <li>Traditional Dance Performances</li>
+      <li>Handicraft Exhibition</li>
+      <li>Cultural Workshops</li>
+      <!-- Add more events here -->
+    </ul>
+    
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to contact us at <a href="mailto:info@joharjharkhandexpo.com">info@joharjharkhandexpo.com</a>.</p>
+    
+    <h2>Nature Image</h2>
+    <img id="natureImage" src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d9" alt="Beautiful Nature">
+    <button class="btn" onclick="changeImage()">Change Image</button>
+  </div>
+  
+  <script>
+    // JavaScript code here
+    function changeImage() {
+      var image = document.getElementById('natureImage');
+      image.src = 'https://images.unsplash.com/photo-1508106116087-1eabae0153d2'; // New nature image URL
+    }
+  </script>
+</body>
+</html>
